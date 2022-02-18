@@ -1,0 +1,88 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.travel-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(6, minmax(150px, auto));
+    grid-gap: 10px;
+    max-width: 500px;
+    border-bottom: solid 1px #F5F5F5;
+    padding: 20px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2B283A;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.location-google {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.location-icon {
+    width: 7px;
+    height: 9.5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.location {
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 5px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #2B283A;
+}
+
+.google-url {
+    font-size: 10px;
+    font-weight: 400;
+    color: #918E9B;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: #2B283A;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.hyphen {
+    font-size: 10px;
+}
+
+.description {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    color: #2B283A;
+}
+
+.img {
+    width: 126px;
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/6;
+}

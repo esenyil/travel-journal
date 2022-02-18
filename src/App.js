@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import data from './data';
+import Header from './components/Header';
+import TravelList from './components/TravelList';
 
 function App() {
+  const travelPlaces = data.map(place => {
+    return (
+      <TravelList
+        key={place.id}
+        {...place} //spreads every item in the object into separate props
+        // additionally you could do this:
+        // title={place.title}
+        // location={place.location}
+        // and so on...
+      />
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <section className="travel-list">
+        {travelPlaces}
+      </section>
     </div>
   );
 }

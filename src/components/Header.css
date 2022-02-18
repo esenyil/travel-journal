@@ -1,0 +1,19 @@
+.header{
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    padding: 15px
+}
+
+.header h2 {
+    color: white;
+    font-weight: 200;
+}
+
+.logo{
+    vertical-align: middle;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
