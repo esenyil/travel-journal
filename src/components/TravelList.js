@@ -22,6 +22,7 @@ function TravelList({id, title, location, googleMapsUrl, startDate, endDate, des
                 <img className="img" src={imageUrl} alt="hello"/>
             </div>
         </div>
+    
     )
 }
 

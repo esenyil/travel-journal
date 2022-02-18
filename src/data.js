@@ -49,6 +49,4 @@ export default [
         description: "Basílica de la Sagrada Familia; 'Basilica of the Holy Family'), also known as the Sagrada Família, is a large unfinished minor basilica in the Eixample district of Barcelona, Catalonia, Spain. ",
         imageUrl: "https://images.unsplash.com/photo-1641600472465-209ffab830e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNhZ3JhZGElMjBmYW0lQzMlQURsaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
     }
-    
-
 ]
