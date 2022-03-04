@@ -2,8 +2,6 @@ import './TravelList.css';
 import locationIcon from '../assets/location-icon.png'
 
 function TravelList({id, title, location, googleMapsUrl, startDate, endDate, description, imageUrl}) {
-    console.log(imageUrl)
-
     return(
         <div className='card-container'>
             <div className="travel-card" key={id}>
@@ -11,7 +9,7 @@ function TravelList({id, title, location, googleMapsUrl, startDate, endDate, des
                 <div className="location-google">
                     <img className="location-icon" src={locationIcon} alt="location icon" />
                     <p className="location">{location}</p>
-                    <a className="google-url" href={googleMapsUrl} target="_blank">View on Google Maps</a>
+                    {googleMapsUrl && <a className="google-url" href={googleMapsUrl} target="_blank">View on Google Maps</a>}
                 </div>
                 <div className='date-container'>
                     <p className="date">{startDate}</p>
