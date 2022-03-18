@@ -1,0 +1,13 @@
+.app-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    width: 50%;
+    padding: 3em;
+}
+
+.right-section {
+    width: 50%;
+}

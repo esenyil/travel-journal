@@ -1,4 +1,4 @@
-export default [
+const data =  [
     {
         id: 1,
         title: "Cappadocia",
@@ -50,3 +50,5 @@ export default [
         imageUrl: "https://images.unsplash.com/photo-1641600472465-209ffab830e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNhZ3JhZGElMjBmYW0lQzMlQURsaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
     }
 ]
+
+export default data;

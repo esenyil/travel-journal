@@ -2,9 +2,13 @@ import './App.css';
 import data from './data';
 import Header from './components/Header';
 import TravelList from './components/TravelList';
+import Form from './components/Form';
+import { useState } from 'react';
 
 function App() {
-  const travelPlaces = data.map(place => {
+  const [places, setPlaces] = useState(data)
+
+  const travelPlaces = places.map(place => {
     return (
       <TravelList
         key={place.id}
@@ -16,13 +20,26 @@ function App() {
       />
     )
   })
-  
+
+  function addPlace(place) {
+    setPlaces((prevState) => {
+      return [...prevState, place]
+    })
+  }
+
   return (
     <div className="App">
       <Header />
-      <section className="travel-list">
-        {travelPlaces}
-      </section>
+      <div className="app-content">
+        <div className='left-section'>
+          <section className="travel-list">
+            {travelPlaces}
+          </section>
+        </div>
+        <div className="right-section">
+          <Form addPlace={addPlace} />
+        </div>
+      </div>
     </div>
   );
 }
